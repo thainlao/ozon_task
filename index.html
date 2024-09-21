@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ozon task</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://st.ozone.ru/assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <section>
+            <h2>Progress</h2>
+            <div class="bar" id="progressBar"></div>
+        </section>
+
+        <section>
+            <div class="container_inside_second">
+                <div class="handle_input">
+                    <input id="valueInput" 
+                        value="60" class="value_input" type="number" min="0" max="100">
+                    <h2>Value</h2>
+                </div>
+                
+                <div class="handle_input">
+                    <label class="switch">
+                        <input type="checkbox" id="animateSwitch">
+                        <span class="slider"></span>
+                    </label>
+                    <h2>Animate</h2>
+                </div>
+                
+                <div class="handle_input">
+                    <label class="switch">
+                        <input type="checkbox" id="hideSwitch">
+                        <span class="slider"></span>
+                    </label>
+                    <h2>Hide</h2>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="info">
+        <a href="/">
+            <img src="./assets/icons8-github-50 (1).png"/>
+        </a>
+        <a href="https://t.me/thainlaod">
+            <img src="./assets/icons8-telegram-50 (3).png"/>
+        </a>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
