@@ -34,12 +34,25 @@ h2{font-size: 1rem;}
     border-radius: 50%;
     transition: all 0.2s ease-in;
     background-color: white;
+    animation: circleShine 2s infinite ease-in-out;
     --mask: 
-      linear-gradient(#005cff, #005cff) padding-box, 
+      linear-gradient(#005cff, #005cff) padding-box,  
       conic-gradient(#005cff var(--p, 60%), transparent 0%) border-box;
     -webkit-mask: var(--mask);
-        mask: var(--mask)
+        mask: var(--mask);
 }
+
+@keyframes circleShine {
+    0% {
+        opacity: 0.7;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0.7;
+      }
+    }
 
 .container_inside_second {
     position: absolute;
