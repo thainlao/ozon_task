@@ -128,6 +128,8 @@ input:checked + .slider:before {
 .info img {
     cursor: pointer;
     transition: all 0.2s ease-in;
+    height: 50px;
+    width: 50px;
 &:hover{
     transform: rotate(15deg);
 }}
@@ -138,6 +140,11 @@ input:checked + .slider:before {
         height: 568px;
         width: 320px;
     }
+
+    .info img {
+        height: 30px;
+        width: 30px;
+    }
 }
 
 @media only screen and (max-width: 480px){
@@ -145,5 +152,10 @@ input:checked + .slider:before {
         flex-direction: column;
         height: 568px;
         width: 320px;
+    }
+
+    .info img {
+        height: 30px;
+        width: 30px;
     }
 }
